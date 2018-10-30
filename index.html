@@ -28,22 +28,22 @@
 </head>
 
 <body>
-    <video id="bcls_alltimePlaysPlayer"
+    <video-js id="bcls_alltimePlaysPlayer"
     data-playlist-id="5282200243001"
     data-account="1752604059001"
     data-player="S1UUAwWzM"
     data-embed="default"
     data-application-id
     class="video-js"
-    controls></video>
+    controls></video-js>
 
   <div id="bcls_alltimePlaysPlaylist" class="vjs-playlist"></div>
 
-  <script src="//players.brightcove.net/1752604059001/S1UUAwWzM_default/index.min.js"></script>
+  <script src="https://players.brightcove.net/1752604059001/S1UUAwWzM_default/index.min.js"></script>
 
   <!-- custom script -->
   <script type="text/javascript">
-    videojs('bcls_alltimePlaysPlayer').ready(function () {
+    videojs.getPlayer('bcls_alltimePlaysPlayer').ready(function() {
       var player = this,
         el,
         txt,
